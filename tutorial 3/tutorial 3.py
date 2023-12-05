@@ -1,4 +1,5 @@
 # Bootstrap & Template Inheritance
+# Bootstrap's website url : https://getbootstrap.com/docs/4.3/components/navbar/
 from flask import Flask, redirect, url_for, render_template
 
 app = Flask(__name__)
