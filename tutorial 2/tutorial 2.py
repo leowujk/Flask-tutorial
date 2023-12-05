@@ -7,7 +7,6 @@ app = Flask(__name__)
 # the page will be not found, you must add a parameter behind original url so that it will show something
 @app.route("/<name>")
 def home(name):
-    #don't add anything comments line in html, or it will report error
     return render_template("index.html", content=["Allen","Jeff","Jecica"])
 
 # for easier to demo
