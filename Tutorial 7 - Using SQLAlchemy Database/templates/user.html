@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}User{% endblock %}
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <p>Welcome, {{user}}</p>
+    <form action="#" method="POST">
+        <!--{{}} access variable from tutorial 7's user() function, and if email is exist, fill in-->
+        <input type="email" name="email" placeholder="Enter Email" value="{{email if email}}"/>
+        <input type="submit" value="submit"/>
+    </form>
+{% endblock %}
