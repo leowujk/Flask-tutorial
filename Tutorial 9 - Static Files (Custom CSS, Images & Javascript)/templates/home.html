@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+    <!-- style.css's body element will affect this block named "content" -->
+    <!-- The text color rule applies to text content within the body element, not to other types of content like images. -->
+    <h1>Home Page</h1>
+    <!-- the first parameter is folders name (can't change), the second parameter is specific resorce's absolute path -->
+    <img src="{{url_for('static',filename='images/test1.jpg')}}">
+
+{% endblock %}
