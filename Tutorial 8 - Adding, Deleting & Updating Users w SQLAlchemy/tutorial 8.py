@@ -1,5 +1,5 @@
 # PLEASE DO NOT ADD SPECIFIC CHARACTER TO THE HTML.FILE !!!!!
-# Learning database's Database
+# Learning database's operation
 from flask import Flask, redirect, url_for, render_template, request, session, flash
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
