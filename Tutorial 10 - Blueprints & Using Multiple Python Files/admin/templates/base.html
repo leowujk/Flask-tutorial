@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <!--add .CSS file , remember put .CSS file into folder named static-->
+        <!-- use python code to grab url information, "static" is folder's name -->
+
+        <!-- CSS.file is always put in head element, not body element -->
+
+        <!-- It simply specifies the type of the linked resource as CSS. -->
+        <!-- the first parameter is folders name (can't change), the second parameter is set the path within the static folder. -->
+        <!-- if we use second.py as blueprint, we need to change static into second.static-->
+        <link rel="stylesheet" type="text/css" href="{{url_for('second.static',filename='styles/style.css')}}">
+
+    </head>
+    
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+
+</html>
